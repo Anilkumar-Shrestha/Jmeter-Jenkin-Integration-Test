@@ -91,6 +91,11 @@ Note: *For jmeter-metrics to work we should first save the output log file to cs
     ```
     jmetermetrics --input ./ --output jmeter-jenkin-testresult.jtl -M jmeterMetricsReport.html
     ```
+     *   jmetermetrics : command to run jmeter metrics
+     *   --input ./ : Path of result files
+     *   --output jmeter-jenkin-testresult.jtl : Name of *.jtl or *.csv result file
+     *   -M jmeterMetricsReport.html : Output name of the generate metrics report
+  
   ![jmeter-metrics-cmd](./ss/jmeter-metrics-cmd.jpg)
 - click on build Now.
 - Go to the project and click "Workspace". You can see the metrics report html file. Click the file and open in your favourite browser.
