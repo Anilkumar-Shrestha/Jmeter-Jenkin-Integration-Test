@@ -44,8 +44,14 @@ Following are some important features of JMeter:
     ![freestyle_project](./ss/freestyle_project.jpg)
     * Go to Build and click on Add build steps. It pop up the list where you should click on "Execute Window batch Command".
     ![build_env_setting](./ss/build_env_setting.jpg)
-    * Add below command lines. (You can check [this doc](https://jmeter.apache.org/usermanual/get-started.html#running) for command line parameters)
-        ```
+    * Add below command lines. (You can check [this doc](https://jmeter.apache.org/usermanual/get-started.html#running) for command line parameters).
+        *   C:\apache-jmeter-5.3\bin\jmeter : Jmeter.exe path
+        *   -Jjmeter.save.saveservice.output_format=xml : for output to save in xml. if you want to save in csv, you can change it.
+        *   -n : for running in non gui mode
+        *   -t C:\apache-jmeter-5.3\Jmeter-jenkin-integration-test\Jmeter-Jenkin-Integration-Test\jmeter_jenkin_test.jmx : for your jmx script test file location.
+        *   -l jmeter-jenkin-testresult.jtl : Location and filename for output result file to save
+       
+       ```
         C:\apache-jmeter-5.3\bin\jmeter -Jjmeter.save.saveservice.output_format=xml -n -t C:\apache-jmeter-5.3\Jmeter-jenkin-integration-test\Jmeter-Jenkin-Integration-Test\jmeter_jenkin_test.jmx -l jmeter-jenkin-testresult.jtl
         ```
     ![build_windows_cmd](./ss/build_windows_cmd.jpg)
