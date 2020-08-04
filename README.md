@@ -78,15 +78,15 @@ Note: *For jmeter-metrics to work we should first save the output log file to cs
         -Jjmeter.save.saveservice.output_format=csv
      ```
 * Add below command lines. (You can check [this doc](https://jmeter.apache.org/usermanual/get-started.html#running) for command line parameters).
-        *   C:\apache-jmeter-5.3\bin\jmeter : Jmeter.exe path
-        *   -Jjmeter.save.saveservice.output_format=csv : for output to save in csv format.
-        *   -n : for running in non gui mode
-        *   -t C:\apache-jmeter-5.3\Jmeter-jenkin-integration-test\Jmeter-Jenkin-Integration-Test\jmeter_jenkin_test.jmx : for your jmx script test file location.
-        *   -l jmeter-jenkin-testresult.jtl : Location and filename for output result file to save
-       
-       ```
-        C:\apache-jmeter-5.3\bin\jmeter -Jjmeter.save.saveservice.output_format=csv -n -t C:\apache-jmeter-5.3\Jmeter-jenkin-integration-test\Jmeter-Jenkin-Integration-Test\jmeter_jenkin_test.jmx -l jmeter-jenkin-testresult.jtl
-        ```
+     *   C:\apache-jmeter-5.3\bin\jmeter : Jmeter.exe path
+     *   -Jjmeter.save.saveservice.output_format=csv : for output to save in csv format.
+     *   -n : for running in non gui mode
+     *   -t C:\apache-jmeter-5.3\Jmeter-jenkin-integration-test\Jmeter-Jenkin-Integration-Test\jmeter_jenkin_test.jmx : for your jmx script test file location.
+     *   -l jmeter-jenkin-testresult.jtl : Location and filename for output result file to save
+    
+    ```
+     C:\apache-jmeter-5.3\bin\jmeter -Jjmeter.save.saveservice.output_format=csv -n -t C:\apache-jmeter-5.3\Jmeter-jenkin-integration-test\Jmeter-Jenkin-Integration-Test\jmeter_jenkin_test.jmx -l jmeter-jenkin-testresult.jtl
+     ```
 
     ```
     jmetermetrics --input ./ --output jmeter-jenkin-testresult.jtl -M jmeterMetricsReport.html
@@ -96,10 +96,20 @@ Note: *For jmeter-metrics to work we should first save the output log file to cs
 - Go to the project and click "Workspace". You can see the metrics report html file. Click the file and open in your favourite browser.
     ![jmeter-metrics-workspace](./ss/jmeter-metrics-workspace.jpg)
     ![jmeter_metrics_dashboard](./ss/jmeter_metrics_dashboard.jpg)
-- you can change the logo as well with --logo parameter send.
+- You can change the logo as well with --logo parameter send.
 
 If you face error "javascript not enable" while viewing the html file in chrome, you can troubleshoot with the steps mentioned [here](https://github.com/Anilkumar-Shrestha/robotframework-jenkins-run#Troubleshoot_viewreport)
 
 ### What is Throughput? in Jenkins <a name="throughput"></a>
 The Throughput is the most important parameter in stress testing. It signifies number of transactions or requests that can be made in a given period of time. It is a useful measurement to check the load capacity of the server. It represents the ability of the server to handle a heavy load.  The higher the Throughput is, the better is the server performance.
 
+---
+
+If you have any questions / suggestions / comments on the report, please feel free to reach me at
+ - Email: <a href="mailto:nl.shrestha90@gmail.com?Subject=Jmeter-Jenkins-Integration-test" target="_blank">`nl.shrestha90@gmail.com`</a> 
+ - LinkedIn: <a href="https://www.linkedin.com/in/anilshrestha-19890307/" target="_blank">`Anil Kumar Shrestha`</a>
+
+---
+
+
+:star: repo if you like it
