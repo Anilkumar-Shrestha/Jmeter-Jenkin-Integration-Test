@@ -51,7 +51,7 @@ Following are some important features of JMeter:
     ![build_windows_cmd](./ss/build_windows_cmd.jpg)
     * Go to Post-build Actions and click on Add Post-build steps. Select "Publish Performance test result report".
     ![post_build_actions](./ss/post_build_actions.jpg)
-    * Add source data files as the above command -L parameter filename. Incase of current keep "jmeter-jenkin-testresult.jtl".
+    * Add source data files as the above command -L parameter filename.
     ![publish_performance_report](./ss/publish_performance_report.jpg)
     * click on Save button.
 4. Click on Build Now. You should build twice or more to see the graphical performance report.
